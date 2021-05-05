@@ -1,0 +1,44 @@
+[
+  {
+    "productName": "Product 1",
+    "price" : 125,
+    "priceDiscount" : 100,
+    "description" : "some description text will be here",
+    "imageCover" : "a"
+  },
+  {
+    "productName": "Product 2",
+    "price" : 225,
+    "priceDiscount" : 1500,
+    "description" : "some description text will be here",
+    "imageCover" : "a"
+  },
+  {
+    "productName": "Product 3",
+    "price" : 295,
+    "priceDiscount" : 160,
+    "description" : "some description text will be here",
+    "imageCover" : "a"
+  },
+  {
+    "productName": "Product 4",
+    "price" : 325,
+    "priceDiscount" : 190,
+    "description" : "some description text will be here",
+    "imageCover" : "a"
+  },
+  {
+    "productName": "Product 5",
+    "price" : 425,
+    "priceDiscount" : 310,
+    "description" : "some description text will be here",
+    "imageCover" : "a"
+  },
+  {
+    "productName": "Product 6",
+    "price" : 525,
+    "priceDiscount" : 410,
+    "description" : "some description text will be here",
+    "imageCover" : "a"
+  }
+]

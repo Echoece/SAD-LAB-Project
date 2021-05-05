@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(lang='en')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        link( rel='stylesheet' href='css/bootstrap.min.css')
+        link( rel='stylesheet' href='css/main.css')
+        link( href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet')
+        link(rel='stylesheet' href='css/all.css')
+
+        title My Test Site | #{title}
+
+    body
+        include fragments/_header
+        // content
+        block content
+        // featured section
+        include fragments/_feature
+        // footer
+        include fragments/_footer
+        // scripts
+        include fragments/_scripts

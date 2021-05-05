@@ -1,0 +1,92 @@
+extends base
+
+block content
+    section.products
+        .container-fluid
+            .row
+                .col-10.col-md-5.col-lg-3.mx-auto.my-3.px-5.text-capitalize
+                    // categories
+                    .products-categories-title.my-4
+                        h6.text-uppercase shop by categories
+                        .products-categories-underline
+                    // single link
+                    a.d-block.products-categories-link(href='#')
+                        p.mb-0 kitchen
+                    // end of single link
+                    // single link
+                    a.d-block.products-categories-link(href='#')
+                        p.mb-0 bathroom
+                    // end of single link
+                    // single link
+                    a.d-block.products-categories-link(href='#')
+                        p.mb-0 living room
+                    // end of single link
+                    // single link
+                    a.d-block.products-categories-link(href='#')
+                        p.mb-0 bedroom
+                    // end of single link
+                    // single link
+                    a.d-block.products-categories-link(href='#')
+                        p.mb-0 patio
+                    // end of single link
+                    // end of title
+                    .products-categories-title.my-4
+                        h6.text-uppercase shop by price
+                        .products-categories-underline
+                    form
+                        .form-group
+                            label(for='price-range') range : $0 - $1000
+                            input#price-range.form-control-range(type='range' name='price-range')
+                        .input-group
+                            .input-group-prepend
+                                span.input-group-text.form-icon
+                                    i.fa.fa-search
+                            input.form-control.text-capitalize(type='text' placeholder='search by name')
+                    // end of title
+                    .products-categories-title.my-4
+                        h6.text-uppercase shop by color
+                        .products-categories-underline
+                    // single color
+                    a(href='#')
+                        p.text-capitalize.mb-0
+                            span.d-inline-block.products-color.products-color-black.mr-2
+                            | black (5)
+                    // end of single color
+                    // single color
+                    a(href='#')
+                        p.text-capitalize.mb-0
+                            span.d-inline-block.products-color.products-color-red.mr-2
+                            | red (5)
+                    // end of single color
+                    // single color
+                    a(href='#')
+                        p.text-capitalize.mb-0
+                            span.d-inline-block.products-color.products-color-blue.mr-2
+                            | blue (5)
+                    // end of single color
+                    // single color
+                    a(href='#')
+                        p.text-capitalize.mb-0
+                            span.d-inline-block.products-color.products-color-yellow.mr-2
+                            | yellow (5)
+                    // end of single color
+                    // single color
+                    a(href='#')
+                        p.text-capitalize.mb-0
+                            span.d-inline-block.products-color.products-color-green.mr-2
+                            | green (5)
+                    // end of single color
+                .col-10.col-md-7.col-lg-9.mx-auto.my-3
+                    .row
+                        each product in products
+                            .mx-auto.col-md-6.col-lg-4
+                                .featured-container.p-5
+                                    img.img-fluid(src='img/img-products/product-7.png' alt='product')
+                                    span.featured-search-icon(data-toggle='modal' data-target='#productModal')
+                                        i.fas.fa-search
+                                    a.featured-store-link.text-captilaze(href='#') add to cart
+                                h6.text-capitalize.text-center.my-2
+                                    a.badge.badge-primary(href=`/products/${product.productName}` )= product.productName
+                                h6.text-center
+                                    span.text-muted.old-price.mx-2= product.price
+                                    span= product.priceDiscount

@@ -1,0 +1,34 @@
+header
+    // navbar
+    nav.navbar.navbar-expand-lg.navbar-light
+        a.navbar-brand(href='index.html')
+            img(src='img/logo.png' alt='logo')
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#myNavbar')
+            i.fas.fa-bars
+        #myNavbar.collapse.navbar-collapse
+            ul.navbar-nav.mx-auto
+                li.nav-item.mx-2.nav-active
+                    a.nav-link(href='/') Home
+                li.nav-item.mx-2
+                    a.nav-link(href='products') Products
+                li.nav-item.mx-2
+                    a.nav-link(href='single-product') Single Product
+                li.nav-item.mx-2
+                    a.nav-link(href='store') Store
+        .navbar-icons.d-none.d-lg-flex
+            // single icon
+            .navbar-icon.mx-2
+                i.fas.fa-search
+            // end of single icon
+            // single icon
+            a.navbar-icon.mx-2.navbar-cart-icon(href='store.html')
+                i.fas.fa-shopping-cart
+                .cart-items
+            // end of  single icon
+    // end of navbar
+    .banner.d-flex.align-items-center.pl-3.pl-lg-5
+        div
+            h1.text-capitalize.text-slanted.mb-0 Random
+            h1.text-uppercas.font-weight-bold Text
+            a.btn.btn-yellow(href='products.html') view shop
+    // end of banner

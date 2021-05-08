@@ -1,0 +1,77 @@
+style.
+    input[type=text], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=number], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 10%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+h3 Add Product
+div
+    form(action='addNewProduct' method='post')
+        label(for='pname') Product Name
+        br
+        input#pname(type='text' name='productName' placeholder='Enter Product name..')
+        br
+        label(for='img')  Image
+        br
+        input#img(type='text' name='imageCover' placeholder='Enter img link')
+        br
+        label(for='bname') Brand Name
+        br
+        select#bname(name='Category_Name')
+            option(value='HP') HP
+            option(value='ASUS') ASUS
+            option(value='LENEVO') LENEVO
+            option(value='A4TECH') A4TECH
+        br
+        label(for='cname') Category Name
+        br
+        select#cname(name='Category_Name')
+            option(value='australia') Desktop
+            option(value='canada') Laptop
+            option(value='usa') Mouse
+            option(value='usa') Keyboard
+            option(value='usa') Joystick
+        br
+        label(for='pdescription') Product Description
+        br
+        input#pdescription(type='text' name='description' placeholder='Enter product desc')
+        br
+        label(for='p_qntity') Product Quantity
+        br
+        input#p_qntity(type='number' name='lastname' placeholder='Enter Quantity')
+        br
+        label(for='pprice') Product Price
+        br
+        input#pprice(type='number' name='price' placeholder='Enter Price')
+        br
+        label(for='pdiscount') Product Discount
+        br
+        input#pdiscount(type='number' name='priceDiscount' placeholder='Enter Price')
+        br
+        input(type='submit' value='Submit')

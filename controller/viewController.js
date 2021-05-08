@@ -30,3 +30,22 @@ exports.home = (req,res)=>{
         title: 'Home'
     });
 }
+
+exports.adminHome=(req,res)=> {
+    res.status(200).render('./admin/adminHome');
+}
+
+exports.addProductFormPage=(req,res)=>{
+    res.status(200).render('./admin/addProductForm');
+}
+
+
+exports.addNewProduct = catchAsync (async (req,res)=>{
+    const newProduct = await product.create(req.body);
+    res.status(201).json({
+        status : 'success',
+        message: 'product added successfully',
+        newProduct
+    })
+    console.log(req.body);
+})

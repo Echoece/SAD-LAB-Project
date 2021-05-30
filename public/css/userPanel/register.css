@@ -1,0 +1,248 @@
+﻿.col-side-left,
+.top-right-Panel,
+.search-show,
+.top-banner-wide {
+  display: none !important;
+}
+.owl-carousel {
+  display: none !important;
+}
+#owl-rotator {
+  display: none !important;
+}
+#divFooterNotAuthenticated {
+  display: none;
+}
+#imgLogoEng {
+  display: none;
+}
+#lblBrokerToolbox,
+.Module-Title {
+  position: absolute;
+  top: -83px;
+  margin: 0 0 0 212px;
+  font-size: 26px;
+}
+#imgLogoEng {
+  top: 0px !important;
+}
+#nav {
+  display: none;
+}
+/* IE 7 Fix */
+* + html #password {
+  float: left;
+}
+.bwizard-steps {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  width: 100%;
+  margin-top: 15px;
+}
+.bwizard-steps .active {
+  color: #fff;
+  background: #2f519f;
+}
+.bwizard-steps .active:after {
+  border-left-color: #2f519f;
+}
+.bwizard-steps .active a {
+  color: #fff !important;
+  cursor: default;
+}
+.bwizard-steps .label {
+  position: relative;
+  top: -1px;
+  margin: 0 5px 0 0;
+  padding: 1px 5px 2px;
+}
+.bwizard-steps .active .label {
+  background-color: #333;
+}
+.bwizard-steps li {
+  display: inline-block;
+  position: relative;
+  padding: 12px 17px 10px 30px;
+  *display: inline;
+  *padding-left: 17px;
+  background: #efefef;
+  line-height: 18px;
+  list-style: none;
+  zoom: 1;
+  border-right: 2px solid white;
+  border-bottom: 4px solid white;
+  font-size: 12px;
+}
+.bwizard-steps li:first-child:before {
+  border: none;
+}
+.bwizard-steps li:last-child {
+  margin-right: 0;
+}
+.bwizard-steps li:last-child:after {
+  border: none;
+}
+.bwizard-steps li:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 0;
+  border-bottom: 20px inset transparent;
+  border-left: 20px solid #fff;
+  border-top: 20px inset transparent;
+}
+.bwizard-steps li:after {
+  position: absolute;
+  right: -20px;
+  top: 0;
+  height: 0;
+  width: 0;
+  border-bottom: 20px inset transparent;
+  border-left: 20px solid #efefef;
+  border-top: 20px inset transparent;
+  z-index: 2;
+}
+.bwizard-steps a {
+  color: #333;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+.bwizard-steps a:hover {
+  text-decoration: none;
+}
+.bwizard-steps.clickable li:not(.active) {
+  cursor: pointer;
+}
+.bwizard-steps.clickable li:hover:not(.active) {
+  background: #ccc;
+}
+.bwizard-steps.clickable li:hover:not(.active):after {
+  border-left-color: #ccc;
+}
+.bwizard-steps.clickable li:hover:not(.active) a {
+  color: #08c;
+}
+.register-field-short {
+  float: left;
+  width: 48%;
+  margin-right: 10px;
+}
+.register-field-long {
+  float: left;
+  width: 98%;
+  margin-right: 10px;
+}
+.tab-valid {
+  background-color: #3c763d !important;
+}
+.tab-valid a {
+  color: white;
+}
+.tab-error {
+  background-color: #a94442 !important;
+}
+.tab-error a {
+  color: white;
+}
+@media (max-width: 1080px) {
+  .register-field-short {
+    width: 100%;
+  }
+  .register-field-long {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .tab-1-left {
+    width: 100% !important;
+  }
+  .tab-1-right {
+    width: 100% !important;
+  }
+}
+@media (max-width: 480px) {
+  /* badges only on small screens */
+  .bwizard-steps li:after,
+  .bwizard-steps li:before {
+    border: none;
+  }
+  .bwizard-steps li,
+  .bwizard-steps li.active,
+  .bwizard-steps li:first-child,
+  .bwizard-steps li:last-child {
+    margin-right: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+.content-block {
+  margin-top: 0px;
+}
+.stickyFooter {
+  display: block !important;
+}
+.intro-text {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 30px 0;
+  text-align: center;
+  clear: both;
+}
+.intro-text p {
+  margin: 0 !important;
+}
+.search-show {
+  display: none !important;
+}
+#divRating,
+.topButtons,
+.stickyFooter,
+.topButtons,
+.stickyFooter,
+.sfNavWrp {
+  display: none;
+}
+.notShowHome {
+  display: block;
+}
+.form-group.password-requirements span.has-error {
+  color: #a94442;
+}
+.form-group.password-requirements span.requirement-met {
+  font-weight: bold;
+}
+.tbl-confirm-details tr td:first-child {
+  background-color: #2f519f;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.centered-block {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.step-block {
+  display: none;
+}
+.pinrequest-modal {
+  box-shadow: 0px 1px 10px #ccc;
+  padding: 10px;
+  float: none;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+.step-heading {
+  color: #2f519f;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.fa-8x {
+  font-size: 8em;
+}

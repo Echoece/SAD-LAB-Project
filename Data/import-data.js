@@ -4,6 +4,8 @@ dotEnv.config({path: './../config.env'});
 const fs = require('fs');
 const mongoose = require('mongoose');
 const products = require('./../model/productModel');
+const users = require('./../model/userModel');
+const history = require('./../model/HistoryModel');
 
 const DB = process.env.DATABSE.replace('<password>',process.env.DATABASE_PASSWORD);
 
@@ -18,10 +20,12 @@ mongoose.connect(DB,{useNewUrlParser:true,
 
 // read json file
 const product =JSON.parse(fs.readFileSync(`${__dirname}/products-data.json`,'utf-8')) ;
+const user = JSON.parse(fs.readFileSync(`${__dirname}/user-data.json`,'utf-8'));
+const pHistory = JSON.parse(fs.readFileSync(`${__dirname}/history-data.json`,'utf-8'));
 //import data into database
 const importData = async ()=>{
     try{
-        await products.create(product);
+        await history.create(pHistory);
         console.log('data loaded');
         process.exit();
     }catch (e) {

@@ -1,0 +1,18 @@
+[
+  {
+    "productName": "Vanilla Armor",
+    "category": "skin",
+    "time": "2019-01-05",
+    "price": "500"
+  },{
+    "productName": "Blue Weapon",
+    "category": "weapon",
+    "time": "2019-01-05",
+    "price": "700"
+  },{
+    "productName": "Red Mount",
+    "category": "mount",
+    "time": "2019-01-05",
+    "price": "900"
+  }
+]

@@ -1,0 +1,169 @@
+doctype html
+head
+    title
+        | Change Password
+    link(rel='stylesheet' type='text/css' href='css/userPanel/aaa.css')
+    link(href='css/userPanel/corestyles.css' rel='stylesheet')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+    meta(http-equiv='Content-type' content='text/html; charset=UTF-8')
+    link(href='css/userPanel/corestyles1.css' rel='stylesheet')
+    style.
+        .pace .pace-progress {
+            top: 40px !important;
+            display: none !important;
+        }
+        #MainWrapper {
+            margin: 0 auto;
+            position: relative;
+            width: 95%;
+            margin-bottom: 50px;
+        }
+        .sfMainWrapper {
+            margin-bottom: 50px;
+            margin: 0 auto;
+            position: relative;
+            width: 95%;
+        }
+        #footer {
+            background: white;
+            padding-top: 50px;
+            padding-right: 100px;
+            padding-bottom: 0px;
+            padding-left: 80px;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: #D8D1D1;
+        }
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            color: #514AAC;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .topnav a.active {
+            background-color: #FEFEFE;
+            color: black;
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=password], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=number], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        #containerDiv {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            margin: 10px 650px;
+            padding: 20px;
+        }
+.pace.pace-inactive
+    .pace-progress(style='transform: translate3d(100%, 0px, 0px);' data-progress-text='100%' data-progress='99')
+        .pace-progress-inner
+    .pace-activity
+link(href='css/userPanel/register.css' rel='stylesheet' type='text/css')
+#header1(role='banner')
+    .header-contain
+        .container-full
+            .row
+                .col-xs-12.col-md-8.pull-right.header-content-xs-top
+                    .call-centre.hidden-xs
+                    // /.social
+                    .move-search-sm.hidden-xs.hidden-md.hidden-lg
+                .col-xs-12.col-md-4.pull-left
+                    a.site-logo(href='javascript:void(0)')
+.clearfix &nbsp;
+#MainWrapper.sfMainWrapper(style='width: 90%; margin-bottom: 20px;')
+    .topnav
+        a(href='/userProfile') User Profile
+        a(href='/userHistory') Buy History
+        a(href='/') Log Out
+    style.
+    br
+    h4.step-heading(style='text-align:center;')
+        b  Change Password
+    #containerDiv
+        form(action='user.html')
+            label(for='password') Old Password
+            input#oldpass(type='password' name='oldpass' placeholder='')
+            label(for='password') New Password
+            input#newpass(type='password' name='newpass' placeholder='')
+            br
+            br
+            div(style=' margin:10px 120px;')
+                input(type='submit' value='Change password')
+    br
+    br
+    br
+    br
+    footer#footer
+        .line
+            .s-12.l-6
+                p
+            .s-12.l-6
+                a.right
+                    b Contact us
+                    br
+                    p Call : 017XXXXXXX
+                    br
+                    br
+                    a.right
+                        b Follow Us
+                        br
+                        br
+                        a(href='https://www.facebook.com/')
+                            img(alt='Facebook' src='css/userPanel/facebook.png' width='20' height='20')
+                            | Facebook
+                        br
+                        a(href='https://twitter.com/')
+                            img(alt='Facebook' src='css/userPanel/twitter.png' width='20' height='20')
+                            | Twitter
+                        br
+                        a(href='https://bd.linkedin.com/')
+                            img(alt='Facebook' src='css/userPanel/linkedin.png' width='20' height='20')
+                            | linkedin
+                        br

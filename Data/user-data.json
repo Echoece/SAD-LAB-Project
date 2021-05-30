@@ -1,0 +1,17 @@
+[
+  {
+    "name" : "Rafiqul Islam",
+    "email" : "echoece@gmail.com",
+    "password" : "1234",
+    "address" : "Ecb chatter , matikata, dhaka, bangladesh",
+    "gender" : "Male"
+  },
+  {
+    "name" : "Sajib Mia",
+    "email" : "sajib@gamil.com",
+    "password" : "12345",
+    "address" : "Dhaka",
+    "gender" : "Male"
+  }
+
+]

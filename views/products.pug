@@ -1,5 +1,4 @@
 extends base
-
 block content
     section.products
         .container-fluid
@@ -11,23 +10,23 @@ block content
                         .products-categories-underline
                     // single link
                     a.d-block.products-categories-link(href='#')
-                        p.mb-0 kitchen
+                        p.mb-0 Weapon
                     // end of single link
                     // single link
                     a.d-block.products-categories-link(href='#')
-                        p.mb-0 bathroom
+                        p.mb-0 Armor
                     // end of single link
                     // single link
                     a.d-block.products-categories-link(href='#')
-                        p.mb-0 living room
+                        p.mb-0 Costume
                     // end of single link
                     // single link
                     a.d-block.products-categories-link(href='#')
-                        p.mb-0 bedroom
+                        p.mb-0 Consumable
                     // end of single link
                     // single link
                     a.d-block.products-categories-link(href='#')
-                        p.mb-0 patio
+                        p.mb-0 Mounts
                     // end of single link
                     // end of title
                     .products-categories-title.my-4
@@ -44,49 +43,49 @@ block content
                             input.form-control.text-capitalize(type='text' placeholder='search by name')
                     // end of title
                     .products-categories-title.my-4
-                        h6.text-uppercase shop by color
+                        h6.text-uppercase shop by rarity
                         .products-categories-underline
                     // single color
                     a(href='#')
                         p.text-capitalize.mb-0
                             span.d-inline-block.products-color.products-color-black.mr-2
-                            | black (5)
+                            | Ultra rare (5)
                     // end of single color
                     // single color
                     a(href='#')
                         p.text-capitalize.mb-0
                             span.d-inline-block.products-color.products-color-red.mr-2
-                            | red (5)
+                            | Very Rare (8)
                     // end of single color
                     // single color
                     a(href='#')
                         p.text-capitalize.mb-0
                             span.d-inline-block.products-color.products-color-blue.mr-2
-                            | blue (5)
+                            | Rare (13)
                     // end of single color
                     // single color
                     a(href='#')
                         p.text-capitalize.mb-0
                             span.d-inline-block.products-color.products-color-yellow.mr-2
-                            | yellow (5)
+                            | Uncommon (21)
                     // end of single color
                     // single color
                     a(href='#')
                         p.text-capitalize.mb-0
                             span.d-inline-block.products-color.products-color-green.mr-2
-                            | green (5)
+                            | Common (25)
                     // end of single color
                 .col-10.col-md-7.col-lg-9.mx-auto.my-3
                     .row
                         each product in products
                             .mx-auto.col-md-6.col-lg-4
                                 .featured-container.p-5
-                                    img.img-fluid(src='img/img-products/product-7.png' alt='product')
+                                    img.img-fluid(src=`img/img-products/Products-3.jpg` alt='product')
                                     span.featured-search-icon(data-toggle='modal' data-target='#productModal')
                                         i.fas.fa-search
                                     a.featured-store-link.text-captilaze(href='#') add to cart
                                 h6.text-capitalize.text-center.my-2
-                                    a.badge.badge-primary(href=`/products/${product.productName}` )= product.productName
+                                    a.badge.badge-primary(href=`/product?name=${product.productName}` )= product.productName
                                 h6.text-center
                                     span.text-muted.old-price.mx-2= product.price
                                     span= product.priceDiscount

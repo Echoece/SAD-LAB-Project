@@ -118,7 +118,7 @@ body {
 /* banner  */
 .banner {
   min-height: calc(100vh - 101px);
-  background: url("../img/pageBcg/bannerBcg.jpeg");
+  background: url("../img/pageBcg/bannerBcg.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

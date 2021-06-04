@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Jon",
+    "race": "Warrior",
+    "kills": 1000,
+    "serial": 2
+  },
+  {
+    "name": "Smith",
+    "race": "Fighter",
+    "kills": 570,
+    "serial": 4
+  },
+  {
+    "name": "Ben",
+    "race": "Mage",
+    "kills": 1500,
+    "serial": 1
+  },
+  {
+    "name": "Mosh",
+    "race": "Pagan",
+    "kills": 800,
+    "serial": 3
+  },
+  {
+    "name": "Morgan",
+    "race": "Archer",
+    "kills": 500,
+    "serial":5
+  },
+  {
+    "name": "kat",
+    "race": "Hunter",
+    "kills": 340,
+    "serial": 6
+  }
+]

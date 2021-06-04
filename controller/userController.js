@@ -13,7 +13,7 @@ exports.getHistory = catchAsync(async (req,res)=>{
 })
 
 exports.getUser= catchAsync(async (req,res,next)=>{
-    const userById = await user.findById('60b36ae80fd1f83a08cfe51d');
+    const userById = await user.findById('60b36ae80fd1f83a08cfe51e');
     if(!userById){
         return next(new AppError('no such user exists',404));
     }

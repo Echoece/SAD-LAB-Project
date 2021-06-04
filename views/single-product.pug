@@ -6,31 +6,31 @@ block content
             .row
                 .col-10.mx-auto.col-lg-4.text-center.my-5
                     .single-product-img-container
-                        img.img-fluid(src='img/img-products/product-1.png' alt='')
+                        img.img-fluid(src='img/img-products/Products-3.jpg' alt='')
                     .row.single-product-photos.mt-3
                         // single photo
                         .col-2.col-sm-2.single-product-photo.p-1
-                            img.img-fluid(src='img/img-products/product-1.png' alt='')
+                            img.img-fluid(src='img/img-products/Products-3.jpg' alt='')
                         // endo of single photo
                         // single photo
                         .col-2.col-sm-2.single-product-photo.p-1
-                            img.img-fluid(src='img/img-products/product-1.png' alt='')
+                            img.img-fluid(src='img/img-products/Products-3.jpg' alt='')
                         // endo of single photo
                         // single photo
                         .col-2.col-sm-2.single-product-photo.p-1
-                            img.img-fluid(src='img/img-products/product-1.png' alt='')
+                            img.img-fluid(src='img/img-products/Products-3.jpg' alt='')
                         // endo of single photo
                         // single photo
                         .col-2.col-sm-2.single-product-photo.p-1
-                            img.img-fluid(src='img/img-products/product-1.png' alt='')
+                            img.img-fluid(src='img/img-products/Products-3.jpg' alt='')
                         // endo of single photo
                         // single photo
                         .col-2.col-sm-2.single-product-photo.p-1
-                            img.img-fluid(src='img/img-products/product-1.png' alt='')
+                            img.img-fluid(src='img/img-products/Products-3.jpg' alt='')
                         // endo of single photo
                         // single photo
                         .col-2.col-sm-2.single-product-photo.p-1
-                            img.img-fluid(src='img/img-products/product-1.png' alt='')
+                            img.img-fluid(src='img/img-products/Products-3.jpg' alt='')
                         // endo of single photo
                 // info
                 .col-10.mx-auto.col-lg-8.single-product-info.my-5.px-lg-5
@@ -48,11 +48,9 @@ block content
                             i.far.fa-star
                         span.text-capitalize (25 customer reviews)
                     // end of ratings
-                    h2.text-uppercase.my-2 premium office armchair
-                    h2 $10.00 - $200.00
-                    p.lead.text-muted
-                        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-                        | porro.
+                    h2.text-uppercase.my-2= productByName[0].productName
+                    h2  $#{productByName[0].price}
+                    p.lead.text-muted=  productByName[0].description
                     // colors
                     h5.text-uppercase
                         | colors :

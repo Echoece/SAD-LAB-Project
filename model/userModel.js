@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 // user - name , email, password, address, gender, DOB
 
 const userSchema = new mongoose.Schema({
-    id: String,
     name:{
         type: String,
         required: [true, 'Please enter your name']
